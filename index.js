@@ -1,12 +1,24 @@
-console.log("Salve Curiosos <3 ");
-var chute = document.querySelector(".chute");
-var tentativa = document.querySelector(".tentativa");
-var acertos = document.querySelector(".acertos");
-var palpite = document.querySelector(".campo-do-palpite");
-var resposta = document.querySelector(".resposta");
-console.log(resposta);
-var contagemPalpites 
-function conferirPalpites() {
-  console.log("Rapaz ;-; sei de nada")
+const botao = document.querySelector(".guessSubmit");
+const valorAleatorio = Math.floor(Math.random() * 100 + 1);
+const campoResposta = document.querySelector(".campoResposta");
+
+function verificarResposta() {
+  campoResposta.style.opacity = "1";
+  const palpite = document.querySelector(".campo-do-palpite");
+  const valorDaResposta = Number(palpite.value);
+
+  if (valorDaResposta === valorAleatorio) {
+    return (campoResposta.textContent = "Acertou, seu(sua) lindo(a) <3");
+  } else {
+    return (campoResposta.textContent = "Quase, seu(sua) lindo(a) <3");
+  }
 }
-conferirPalpites();
+
+botao.addEventListener("click", verificarResposta);
+
+function limparResposta() {
+  campoResposta.style.opacity = "0";
+}
+
+setTimeout(limparResposta, 3000);
+

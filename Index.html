@@ -1,21 +1,26 @@
-<!-- salve familia <3 vamos começar o tutorial de como criar um jogo de adivinhação.  -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo Adivinhe</title>
+  <script type="text/javascript" async src="./index.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-  <h1>Jogo de Adivinhaçao</h1>
-  <p class="chute"></p>
-  <p class="tentativas"></p>
-  <p class="acertos"></p>
-  <label for="campo-do-palpite">Digite seu palpite: </label>
-  <input class="campo-do-palpite" value="enviar palpite" type="text" id="campo-do-palpite">
-  <input type="submit" value="enviar" class="resposta">
+  <h1>Jogo de Adivinhação</h1>
+  <input class="campo-do-palpite" placeholder="digite sua resposta" type="text" id="campo-do-palpite" />
+  <button type="submit" form=".campo-do-palpite" class="guessSubmit">
+    Enviar
+  </button>
+  <p class="campoResposta"></p>
 </body>
-<script type="text/javascript" src="./index.js"></script>
+
 
 </html>

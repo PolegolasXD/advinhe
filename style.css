@@ -1,0 +1,63 @@
+@keyframes entrada{
+  from {
+    opacity: 0;
+    transform: translateX(-27px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+body {
+  background: rgb(100, 133, 243);
+  color: white;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 40%;
+  font-family: "Azeret Mono", monospace;
+}
+
+h1{
+  opacity: 0;
+  animation-name: entrada;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+button {
+  background: rgb(66, 62, 62);
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: 0.3s;
+  margin-top: 7px;
+
+  opacity: 0;
+  animation-name: entrada;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+input {
+  border: none;
+  padding: 17px;
+  border-radius: 7px;
+  outline: none;
+
+  opacity: 0;
+  animation-name: entrada;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
